@@ -5,6 +5,8 @@ Then run
 gcloud builds submit . --config=cloudbuild.yaml
 ```
 # Step to use the builder in google cloud build
+```
 steps:
 - name: 'gcr.io/$PROJECT_ID/gcloud-maven'
   args: ['mvn', 'appengine:deploy']
+```
